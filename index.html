@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <title>Shoe Catalogue</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Shoe Catalogue</h1>
+
+      <div id="searchStockDiv">
+
+      </div>
+
+      <script id="searchTemplate" type="text/x-handlebars">
+        <div id="selectInput">
+          <h2>Brand: </h2>
+          <select id="brandSelect" class="searchSelect">
+            {{ #each shoe }}
+            <option name="brand" value="{{ this.brand }}">{{ this.brand }}</option>
+            {{ /each }}
+          </select>
+
+          <h2>Size: </h2>
+          <select id="sizeSelect" class="searchSelect">
+            {{ #each shoe }}
+            <option name="size" value="{{ this.size }}">{{ this.size }}</option>
+            {{ /each }}
+          </select>
+
+          <h2>Color: </h2>
+          <select id="colorSelect" class="searchSelect">
+            {{ #each shoe }}
+            <option name="color" value=" {{this.color}} ">{{ this.color }}</option>
+            {{ /each }}
+          </select>
+
+          <button id="searchStockButton" class="inputButton">Search</button>
+        </div>
+      </script>
+
+      <div id="searchResultsOutput"></div>
+    </div>
+    <!-- Search results table -->
+    <script id="searchResultsTemplate" type="text/x-handlebars">
+      <table id="searchResultsTable">
+        <thead>
+          <th>Brand</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>In stock</th>
+          <th>Price</th>
+        </thead>
+        <tbody>
+          {{ #each shoe }}
+          <td>{{ this.brand }}</td>
+          <td>{{ this.color }}</td>
+          <td>{{ this.size }}</td>
+          <td>{{ this.in_stock }}</td>
+          <td>{{ this.price }}</td>
+          {{ /each }}
+        </tbody>
+      </table>
+    </script>
+    <div id="addStockDiv">
+      <form id="addStockForm">
+        <p>Brand: </p><input id="addBrand" class="addStockInput" type="text">
+
+        <p>Color: </p><input id="addColor" class="addStockInput" type="text">
+
+        <p>Size: </p><input id="addSize" class="addStockInput" type="text">
+
+        <p>Price: </p><input id="addPrice" class="addStockInput" type="text">
+
+        <p>Total: </p><input id="addStock" class="addStockInput" type="text">
+
+        <button id="addStockButton" class="inputButton" type="submit">ADD</button>
+      </form>
+    </div>
+    <script src="dist/main.dist.js"></script>
+  </body>
+</html>

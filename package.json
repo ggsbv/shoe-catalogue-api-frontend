@@ -1,0 +1,11 @@
+{
+  "name": "shoe-catalogue-api-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ggsbv/shoe-catalogue-api-frontend.git",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup-plugin-buble": "^0.15.0"
+  }
+}
