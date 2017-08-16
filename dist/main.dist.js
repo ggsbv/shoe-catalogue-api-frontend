@@ -7,7 +7,7 @@ ApiParams.prototype.forAllShoes = function forAllShoes () {
 };
 
 ApiParams.prototype.forShoeSearch = function forShoeSearch (query) {
-    var uri;
+    var uri = '';
 
     for (var category in query) {
         uri += category + '/' + query[category] + '/';
@@ -20,19 +20,29 @@ var ApiQueryBuilder = function ApiQueryBuilder(elementSelectors) {
     this.elementSelectors = elementSelectors;
 };
     
-ApiQueryBuilder.prototype.build = function build () {
+ApiQueryBuilder.prototype.buildForShoeSearch = function buildForShoeSearch () {
         var this$1 = this;
 
     var apiQuery = {};
 
-    for (var i = 0; this.elementSelectors.length; i++) {
+    for (var i = 0; i < this.elementSelectors.length; i++) {
         var elementSelector = this$1.elementSelectors[i];
-        var element = document.querySelector(elementId);
+        var selectedOption = $(elementSelector + " option:selected");
 
-        if (element.value !== 'All') {
-            query[element.name] = element.value;
+        if (selectedOption.val() !== 'All') {
+            apiQuery[selectedOption.attr('name')] = selectedOption.val();
         }
     }
+
+    return apiQuery;
+};
+
+ApiQueryBuilder.prototype.buildForAddingShoe = function buildForAddingShoe () {
+    var apiQuery = {};
+
+    this.elementSelectors.forEach(function (elementSelector) {
+        apiQuery[$(elementSelector).attr('name')] = $(elementSelector).val();
+    });
 
     return apiQuery;
 };
@@ -42,7 +52,7 @@ var ShoeInventory = function ShoeInventory(url) {
 };
 
 ShoeInventory.prototype.all = function all () {
-    $.ajax({
+    return $.ajax({
         type: "GET",
         url : this.apiParams.forAllShoes(),
     }).then(function(shoeStock) {
@@ -52,11 +62,24 @@ ShoeInventory.prototype.all = function all () {
 
 ShoeInventory.prototype.filter = function filter (userSearchOptions) {
     var apiQueryBuilder = new ApiQueryBuilder(userSearchOptions);
-    var apiQuery = apiQueryBuilder.build();
+    var apiQuery = apiQueryBuilder.buildForShoeSearch();
 
-    $.ajax({
+    return $.ajax({
         type: "GET",
         url : this.apiParams.forShoeSearch(apiQuery),
+    }).then(function(shoes) {
+        return shoes;
+    });
+};
+
+ShoeInventory.prototype.add = function add (shoeInputFields) {
+    var apiQueryBuilder = new ApiQueryBuilder(shoeInputFields);
+    var apiQuery = apiQueryBuilder.buildForAddingShoe();
+
+    return $.ajax({
+        type: "POST",
+        url : this.apiParams.forAllShoes(),
+        data: apiQuery
     }).then(function(shoes) {
         return shoes;
     });
@@ -69,6 +92,14 @@ function TheDOM() {
         '#colorSelect'
     ];
 
+    var shoeInputFields = [
+        '#addShoeBrand',
+        '#addShoeSize',
+        '#addShoeColor',
+        '#addShoeStock',
+        '#addShoePrice'
+    ];
+
     var getUserSearchOptions = function () {
         return userSearchOptions;
     };
@@ -77,9 +108,35 @@ function TheDOM() {
         return document.querySelector('#searchButton');
     };
 
+    //sort the shoe size in ascending order
+    var sortOptions = function (optionsSelector) {
+        var listOfOptions = document.querySelector(optionsSelector);
+        var sortedArray = new Array();
+
+        for (var i = 1; i < listOfOptions.length; i++) {
+            sortedArray[i] = listOfOptions.options[i];
+        }
+
+        //sort the size options in ascending order by their value
+        sortedArray.sort(function (a, b) {
+            return  (Number(a.value) > Number(b.value)) ? 1 :
+                    ((Number(a.value) < Number(b.value)) ? -1 : 0);
+        });
+
+        for (var i$1 = 0; i$1 < sortedArray.length; i$1++) {
+            listOfOptions.options[i$1 + 1] = sortedArray[i$1];
+        }
+    };
+
+    var getShoeInputFields = function () {
+        return shoeInputFields;
+    };
+
     return {
         getUserSearchOptions: getUserSearchOptions,
         searchButton: searchButton,
+        sortOptions: sortOptions,
+        getShoeInputFields: getShoeInputFields,
     }
 }
 
@@ -94,7 +151,7 @@ HandlebarsTemplate.prototype.render = function render (outputElemSelector, data)
     outputElem.innerHTML = this.template(data);
 };
 
-var shoeInventory = new ShoeInventory('waiter-availability-webapp.herokuapp.com/api/shoes/');
+var shoeInventory = new ShoeInventory('https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
 var theDOM = new TheDOM();
 var searchTemplate = new HandlebarsTemplate('#searchTemplate');
 var resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
@@ -103,15 +160,34 @@ var resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
 window.onload = function () {
     // create options for categories for all shoes in the API
     shoeInventory.all().then(function (shoeStock) {
-        searchTemplate.render('#searchStockDiv', shoeStock);
+        searchTemplate.render('#searchStockDiv', { shoe : shoeStock });
+        theDOM.sortOptions('#sizeSelect');
     });
 };
 
+document.querySelector('#searchStockDiv').addEventListener('click', function (event) {
 // when user clicks search button
-theDOM.searchButton.addEventListener('click', function () {
-    //display the shoes that match their search query
-    resultsTemplate.render(
-        '#searchResultsOutput',
-        shoeInventory.filter(theDom.getUserSearchOptions)
-    );
+    if (event.target.id === 'searchStockButton') {
+        //display the shoes that match their search query
+        shoeInventory.filter(theDOM.getUserSearchOptions())
+            .then(function (matchingShoes) {
+                resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+            });
+    }
 });
+
+// Stock add modal
+var addStockModal = document.querySelector(".addStock");
+
+// if user clicks on Admin, open the add stock modal
+document.querySelector('#openModal').addEventListener('click', function () { return addStockModal.style.display = 'flex'; });
+
+document.querySelector('.close').addEventListener('click', function () { return addStockModal.style.display = 'none'; });
+
+window.addEventListener('click', function (event) {
+    if (event.target === addStockModal) {
+        addStockModal.style.display = 'none';
+    }
+});
+
+document.querySelector('.addStockButton').addEventListener('click', function () { return shoeInventory.add(theDOM.getShoeInputFields()); });

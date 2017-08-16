@@ -8,7 +8,7 @@ export default class ApiParams {
     };
 
     forShoeSearch(query) {
-        let uri;
+        let uri = '';
 
         for (let category in query) {
             uri += category + '/' + query[category] + '/';
@@ -17,3 +17,4 @@ export default class ApiParams {
         return this.apiUrl + uri;
     };
 }
+

@@ -7,7 +7,7 @@ export default class ShoeInventory {
     }
 
     all() {
-        $.ajax({
+        return $.ajax({
             type    : "GET",
             url     : this.apiParams.forAllShoes(),
         }).then(function(shoeStock) {
@@ -17,11 +17,24 @@ export default class ShoeInventory {
 
     filter(userSearchOptions) {
         let apiQueryBuilder = new ApiQueryBuilder(userSearchOptions);
-        let apiQuery = apiQueryBuilder.build();
+        let apiQuery = apiQueryBuilder.buildForShoeSearch();
 
-        $.ajax({
+        return $.ajax({
             type    : "GET",
             url     : this.apiParams.forShoeSearch(apiQuery),
+        }).then(function(shoes) {
+            return shoes;
+        });
+    }
+
+    add(shoeInputFields) {
+        let apiQueryBuilder = new ApiQueryBuilder(shoeInputFields);
+        let apiQuery = apiQueryBuilder.buildForAddingShoe();
+
+        return $.ajax({
+            type    : "POST",
+            url     : this.apiParams.forAllShoes(),
+            data    : apiQuery
         }).then(function(shoes) {
             return shoes;
         });

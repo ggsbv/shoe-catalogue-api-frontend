@@ -1,85 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <title>Shoe Catalogue</title>
-  </head>
-  <body>
-    <div id="wrapper">
-      <h1>Shoe Catalogue</h1>
+</head>
+<body>
+<nav>
+    <h1>Shoe Catalogue</h1>
 
-      <div id="searchStockDiv">
+    <ul>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">Terms & Conditions</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+        <li class="nav-item"><a href="#" id="openModal">Admin</a></li>
+    </ul>
+</nav>
 
-      </div>
+    <div class="addStock modal">
 
-      <script id="searchTemplate" type="text/x-handlebars">
+    <form class="addStock-form">
+        <div class="modal-header">
+            <h3>Add New Shoe</h3>
+
+            <span class="close">&times;</span>
+        </div>
+
+        <div class="form-group">
+            <label for="addShoeBrand">Brand:</label>
+            <input id="addShoeBrand" name="brand" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+            <label for="addShoeSize">Size:</label>
+            <input id="addShoeSize" name="size" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+            <label for="addShoeColor">Color:</label>
+            <input id="addShoeColor" name="color" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+            <label for="addShoeStock">Total:</label>
+            <input id="addShoeStock" name="in_stock" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+            <label for="addShoePrice">Price:</label>
+            <input id="addShoePrice" name="price" class="form-field" required>
+        </div>
+        <div class="form-group addStockButton">
+            <button>ADD</button>
+        </div>
+    </form>
+    </div>
+
+<div id="wrapper">
+    <div id="searchStockDiv">
+
+    </div>
+
+    <script id="searchTemplate" type="text/x-handlebars">
         <div id="selectInput">
+          <div class="select-group">
           <h2>Brand: </h2>
-          <select id="brandSelect" class="searchSelect">
-            {{ #each shoe }}
-            <option name="brand" value="{{ this.brand }}">{{ this.brand }}</option>
-            {{ /each }}
-          </select>
+              <select id="brandSelect" class="searchSelect">
+                <option value="All">All</option>
 
+                {{#each shoe}}
+                <option name="brand" value="{{this.brand}}">{{this.brand}}</option>
+                {{/each}}
+              </select>
+          </div>
+
+        <div class="select-group">
           <h2>Size: </h2>
-          <select id="sizeSelect" class="searchSelect">
-            {{ #each shoe }}
-            <option name="size" value="{{ this.size }}">{{ this.size }}</option>
-            {{ /each }}
-          </select>
+          <select id="sizeSelect" >
+            <option value="All">All</option>
 
+            {{#each shoe}}
+            <option name="size" value="{{this.size}}">{{this.size}}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div class="select-group">
           <h2>Color: </h2>
           <select id="colorSelect" class="searchSelect">
-            {{ #each shoe }}
-            <option name="color" value=" {{this.color}} ">{{ this.color }}</option>
-            {{ /each }}
+            <option value="All">All</option>
+
+            {{#each shoe}}
+            <option name="color" value="{{this.color}}">{{this.color}}</option>
+            {{/each}}
           </select>
-
-          <button id="searchStockButton" class="inputButton">Search</button>
         </div>
-      </script>
+        </div>
+        <div class="inputButton">
+          <button id="searchButton">SEARCH</button>
+        </div>
 
-      <div id="searchResultsOutput"></div>
-    </div>
-    <!-- Search results table -->
-    <script id="searchResultsTemplate" type="text/x-handlebars">
-      <table id="searchResultsTable">
-        <thead>
-          <th>Brand</th>
-          <th>Color</th>
-          <th>Size</th>
-          <th>In stock</th>
-          <th>Price</th>
-        </thead>
-        <tbody>
-          {{ #each shoe }}
-          <td>{{ this.brand }}</td>
-          <td>{{ this.color }}</td>
-          <td>{{ this.size }}</td>
-          <td>{{ this.in_stock }}</td>
-          <td>{{ this.price }}</td>
-          {{ /each }}
-        </tbody>
-      </table>
     </script>
-    <div id="addStockDiv">
-      <form id="addStockForm">
+
+    <div id="searchResultsOutput"></div>
+</div>
+<!-- Search results table -->
+<script id="searchResultsTemplate" type="text/x-handlebars">
+      <div class="search-results-container">
+          <ul class="columns">
+            {{#each shoes}}
+            <div class="box column is-4">
+              <li class="column-item">
+                <h2>{{this.brand}}</h2>
+
+                <div class="columns item-details">
+                        <ul class="column item-other-property">
+                            <li class="property-list-item">
+                                <span>Color: </span>
+                                <span>{{this.color}}</span>
+                            </li>
+
+                            <li class="property-list-item">
+                                <span>Size:</span>
+                                <span>{{this.size}}</span>
+                            </li>
+
+                            <li class="property-list-item">
+                                <span>Stock:</span>
+                                <span>{{this.in_stock}}</span>
+                            </li>
+                        </ul>
+
+                        <div class="column item-price">
+                            <h2>R{{this.price}}</h2>
+                        </div>
+                </div>
+                <div class="column buy-button">
+                    <button id="buyButton">BUY</button>
+                </div>
+
+              </li>
+            </div>
+            {{/each}}
+          </ul>
+      </div>
+
+</script>
+<div id="addStockDiv">
+    <form class="hidden" id="addStockForm">
         <p>Brand: </p><input id="addBrand" class="addStockInput" type="text">
-
         <p>Color: </p><input id="addColor" class="addStockInput" type="text">
-
         <p>Size: </p><input id="addSize" class="addStockInput" type="text">
-
         <p>Price: </p><input id="addPrice" class="addStockInput" type="text">
-
         <p>Total: </p><input id="addStock" class="addStockInput" type="text">
 
         <button id="addStockButton" class="inputButton" type="submit">ADD</button>
-      </form>
-    </div>
-    <script src="dist/main.dist.js"></script>
-  </body>
+    </form>
+</div>
+<script src="dist/main.dist.js"></script>
+</body>
 </html>

@@ -3,18 +3,28 @@ export default class ApiQueryBuilder {
         this.elementSelectors = elementSelectors;
     }
     
-    build() {
+    buildForShoeSearch() {
         let apiQuery = {};
 
-        for (let i = 0; this.elementSelectors.length; i++) {
+        for (let i = 0; i < this.elementSelectors.length; i++) {
             let elementSelector = this.elementSelectors[i];
-            let element = document.querySelector(elementId);
+            let selectedOption = $(elementSelector + " option:selected");
 
-            if (element.value !== 'All') {
-                query[element.name] = element.value;
-            };
-        };
+            if (selectedOption.val() !== 'All') {
+                apiQuery[selectedOption.attr('name')] = selectedOption.val();
+            }
+        }
 
         return apiQuery;
     };
+
+    buildForAddingShoe() {
+        let apiQuery = {};
+
+        this.elementSelectors.forEach((elementSelector) => {
+            apiQuery[$(elementSelector).attr('name')] = $(elementSelector).val();
+        });
+
+        return apiQuery;
+    }
 }
