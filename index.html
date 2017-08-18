@@ -7,6 +7,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
     <title>Shoe Catalogue</title>
 </head>
 <body>
@@ -73,8 +74,8 @@
               <select id="brandSelect" class="searchSelect">
                 <option value="All">All</option>
 
-                {{#each shoe}}
-                <option name="brand" value="{{this.brand}}">{{this.brand}}</option>
+                {{#each shoe.brand}}
+                <option name="brand" value="{{this}}">{{this}}</option>
                 {{/each}}
               </select>
           </div>
@@ -84,8 +85,8 @@
           <select id="sizeSelect" >
             <option value="All">All</option>
 
-            {{#each shoe}}
-            <option name="size" value="{{this.size}}">{{this.size}}</option>
+            {{#each shoe.size}}
+            <option name="size" value="{{this}}">{{this}}</option>
             {{/each}}
           </select>
         </div>
@@ -95,8 +96,8 @@
           <select id="colorSelect" class="searchSelect">
             <option value="All">All</option>
 
-            {{#each shoe}}
-            <option name="color" value="{{this.color}}">{{this.color}}</option>
+            {{#each shoe.color}}
+            <option name="color" value="{{this}}">{{this}}</option>
             {{/each}}
           </select>
         </div>
@@ -141,7 +142,7 @@
                         </div>
                 </div>
                 <div class="column buy-button">
-                    <button id="buyButton">BUY</button>
+                    <button id="buyButton" value="{{this._id}}">ADD TO CART</button>
                 </div>
 
               </li>

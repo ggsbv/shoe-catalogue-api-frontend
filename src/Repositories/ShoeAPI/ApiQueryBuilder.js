@@ -25,6 +25,6 @@ export default class ApiQueryBuilder {
             apiQuery[$(elementSelector).attr('name')] = $(elementSelector).val();
         });
 
-        return apiQuery;
+        return JSON.stringify(apiQuery);
     }
 }

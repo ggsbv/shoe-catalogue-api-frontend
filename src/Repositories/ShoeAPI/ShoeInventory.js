@@ -29,14 +29,28 @@ export default class ShoeInventory {
 
     add(shoeInputFields) {
         let apiQueryBuilder = new ApiQueryBuilder(shoeInputFields);
-        let apiQuery = apiQueryBuilder.buildForAddingShoe();
+        let shoe = apiQueryBuilder.buildForAddingShoe();
+        let _all = this.all;
 
         return $.ajax({
-            type    : "POST",
-            url     : this.apiParams.forAllShoes(),
-            data    : apiQuery
-        }).then(function(shoes) {
-            return shoes;
+            type : "POST",
+            url : this.apiParams.forAllShoes(),
+            data : shoe,
+            contentType : 'application/json'
+        }).then(function() {
+            return _all();
         });
     }
-}
+
+    find(shoeId) {
+        let apiQuery = { _id : shoeId };
+
+        return $.ajax({
+            type : "GET",
+            url : this.apiParams.forShoeSearch(apiQuery),
+        }).then(function(shoe) {
+            console.log(shoe);
+            return shoe;
+        });
+    }
+};

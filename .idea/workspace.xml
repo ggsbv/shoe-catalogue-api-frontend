@@ -2,14 +2,80 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3743d18-6f8a-4416-9f34-b1bb2df4db66" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_Hash.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_ListCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_Map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_MapCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_Set.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_SetCache.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_Symbol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_arrayIncludes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_arrayIncludesWith.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_assocIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseFindIndex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseGetTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseIsNaN.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseIsNative.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_baseUniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_cacheHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_coreJsData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_createSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_freeGlobal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_getMapData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_getNative.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_getRawTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_getValue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_hashClear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_hashDelete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_hashGet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_hashHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_hashSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_isKeyable.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_isMasked.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_listCacheClear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_listCacheDelete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_listCacheGet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_listCacheHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_listCacheSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_mapCacheClear.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_mapCacheDelete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_mapCacheGet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_mapCacheHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_mapCacheSet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_nativeCreate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_objectToString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_root.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_setCacheAdd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_setCacheHas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_setToArray.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_strictIndexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/_toSource.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/array.default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/eq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/isFunction.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/isObject.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/lang.default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/lang.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/noop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/uniq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/util.default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lodash-es/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main.dist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/main.dist.js" afterPath="$PROJECT_DIR$/dist/main.dist.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HandlebarsTemplate.js" afterPath="$PROJECT_DIR$/src/HandlebarsTemplate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js" afterPath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiQueryBuilder.js" afterPath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiQueryBuilder.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js" afterPath="$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TheDOM.js" afterPath="$PROJECT_DIR$/src/TheDOM.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.js" afterPath="$PROJECT_DIR$/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,13 +92,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="ShoeInventory.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
-              <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+            <state relative-caret-position="689">
+              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding>
-                <element signature="e#969#976#1" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,6 +110,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,6 +122,7 @@
       <find>box</find>
       <find>selec</find>
       <find>build()</find>
+      <find>buy</find>
     </findStrings>
     <replaceStrings>
       <replace>buildForShoeSearch()</replace>
@@ -67,14 +135,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/style/style.css" />
-        <option value="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/src/TheDOM.js" />
-        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/dist/main.dist.js" />
+        <option value="$PROJECT_DIR$/rollup.config.js" />
+        <option value="$PROJECT_DIR$/src/HandlebarsTemplate.js" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/src/Repositories/Cart.js" />
         <option value="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiQueryBuilder.js" />
-        <option value="$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js" />
+        <option value="$PROJECT_DIR$/src/Cart.js" />
+        <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js" />
+        <option value="$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js" />
       </list>
     </option>
   </component>
@@ -93,6 +165,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -117,14 +192,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="shoe-catalogue-api-frontend" type="b2602c69:ProjectViewProjectNode" />
               <item name="shoe-catalogue-api-frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shoe-catalogue-api-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoe-catalogue-api-frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shoe-catalogue-api-frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shoe-catalogue-api-frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -174,22 +259,34 @@
       <workItem from="1502868535423" duration="9052000" />
       <workItem from="1502886597863" duration="9000" />
       <workItem from="1502886628518" duration="2462000" />
-      <workItem from="1502909883182" duration="5403000" />
+      <workItem from="1502909883182" duration="5452000" />
+      <workItem from="1502955859053" duration="12457000" />
+      <workItem from="1502997203755" duration="4410000" />
+      <workItem from="1503041563220" duration="8730000" />
+      <workItem from="1503052357151" duration="130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41366000" />
+    <option name="totallyTimeSpent" value="67142000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -201,6 +298,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -211,16 +309,79 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <marker date="1503052391000" expanded="true" signature="31:364" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="54:88" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="109:144" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="172:361" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="233:320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1503051577000" expanded="true" signature="7:178" ph="..." />
+            <marker date="1503051577000" expanded="true" signature="252:315" ph="/*...*/" />
+            <marker date="1503051577000" expanded="true" signature="601:833" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="709:829" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="915:1268" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="995:1266" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1152:1258" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1776:1873" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1818:1871" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2020:2334" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2147:2330" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2422:2590" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2464:2588" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HandlebarsTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <element signature="e#969#976#1" expanded="true" />
+            <marker date="1503052391000" expanded="true" signature="31:364" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="54:88" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="109:144" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="172:361" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="233:320" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -230,25 +391,11 @@
         <state relative-caret-position="522">
           <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
-            <marker date="1502886573000" expanded="true" signature="31:348" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="54:88" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="109:144" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="172:345" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="233:303" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <marker date="1502886573000" expanded="true" signature="31:348" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="54:88" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="109:144" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="172:345" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="233:303" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="31:364" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="54:88" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="109:144" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="172:361" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="233:320" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -302,210 +449,694 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HandlebarsTemplate.js">
+    <entry file="file://$PROJECT_DIR$/src/TheDOM.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1501845456000" expanded="true" signature="76:201" ph="{...}" />
-            <marker date="1501845456000" expanded="true" signature="240:368" ph="{...}" />
-          </folding>
+        <state relative-caret-position="725">
+          <caret line="49" column="61" lean-forward="false" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-          <folding>
-            <marker date="1502886573000" expanded="true" signature="31:348" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="54:88" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="109:144" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="172:345" ph="{...}" />
-            <marker date="1502886573000" expanded="true" signature="233:303" ph="{...}" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rollup.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modularize/uniq.js" />
+    <entry file="file://$PROJECT_DIR$/modularize/_setToArray.js" />
+    <entry file="file://$PROJECT_DIR$/modularize/_baseUniq.js" />
+    <entry file="file://$PROJECT_DIR$/lodash-es/uniq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HandlebarsTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="true" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="188" column="17" lean-forward="false" selection-start-line="188" selection-start-column="17" selection-end-line="188" selection-end-column="17" />
+        <state relative-caret-position="7502">
+          <caret line="268" column="17" lean-forward="false" selection-start-line="268" selection-start-column="17" selection-end-line="268" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repositories/Cart.js" />
+    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiQueryBuilder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="28" column="5" lean-forward="false" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <marker date="1502911769000" expanded="true" signature="11:31" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="38:117" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="126:151" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="157:270" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="281:351" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="362:404" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="416:451" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="467:515" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="533:626" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="641:727" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="748:771" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="796:1121" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1136:1217" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1227:1249" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1258:1430" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1445:1491" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1519:1561" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1594:1650" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1661:1739" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1749:1765" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1780:1803" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1818:1859" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="1866:1988" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2003:2059" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2079:2151" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2167:2223" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2237:2313" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2341:2375" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2398:2467" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2489:2577" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2591:2664" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2677:2704" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="2722:3024" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3041:3198" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3214:3358" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3367:3432" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3461:3530" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3544:3588" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3614:3639" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3667:3701" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3723:3786" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3815:3866" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3889:3914" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3953:4097" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="3972:4000" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="4010:4060" ph="{...}" />
-            <marker date="1502911769000" expanded="true" signature="4069:4095" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="73:130" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="161:574" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="254:542" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="439:532" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="602:834" ph="{...}" />
+            <marker date="1502958892000" expanded="true" signature="691:784" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TheDOM.js">
+    <entry file="file://$PROJECT_DIR$/src/Cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="51" column="27" lean-forward="false" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+        <state relative-caret-position="174">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/main.dist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2278">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding>
-            <marker date="1502914452000" expanded="true" signature="33:1407" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="63:140" ph="[...]" />
-            <marker date="1502914452000" expanded="true" signature="169:299" ph="[...]" />
-            <marker date="1502914452000" expanded="true" signature="347:388" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="428:491" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="589:1198" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="755:821" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="924:1065" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="1122:1192" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="1244:1283" ph="{...}" />
-            <marker date="1502914452000" expanded="true" signature="1297:1405" ph="{&quot;getUserSearchOptions&quot;: getUserSearchOptions...}" />
+            <marker date="1503052224000" expanded="true" signature="40:66" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="127:154" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="224:302" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="277:302" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="440:489" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="574:977" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="687:953" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="862:947" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1058:1272" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1145:1230" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1323:1367" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1416:1572" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1436:1508" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1503052224000" expanded="true" signature="1535:1568" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1644:1926" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1788:1870" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1503052224000" expanded="true" signature="1893:1922" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="1990:2341" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="2153:2289" ph="{&quot;type&quot;: &quot;POST&quot;...}" />
+            <marker date="1503052224000" expanded="true" signature="2307:2337" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="2462:2660" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="2496:2579" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
+            <marker date="1503052224000" expanded="true" signature="2601:2656" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="2681:4367" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="2711:2788" ph="[...]" />
+            <marker date="1503052224000" expanded="true" signature="2817:2947" ph="[...]" />
+            <marker date="1503052224000" expanded="true" signature="2993:3034" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3072:3135" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3231:3856" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3397:3463" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3572:3713" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3776:3850" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3900:3939" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="3985:4123" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="4044:4115" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="4137:4365" ph="{&quot;getUserSearchOptions&quot;: getUserSearchOptions...}" />
+            <marker date="1503052224000" expanded="true" signature="4369:4419" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4513:4548" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4632:4680" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4746:4779" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4807:4850" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4890:4938" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="4993:5131" ph="/** Used to resolve the ...*/" />
+            <marker date="1503052224000" expanded="true" signature="5184:5217" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="5283:5481" ph="/** A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="5508:5902" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="5616:5687" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="5767:5883" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="5784:5828" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="5834:5879" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="5904:5947" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="5987:6125" ph="/** Used to resolve the ...*/" />
+            <marker date="1503052224000" expanded="true" signature="6180:6362" ph="/** Converts `value` to a string using `Object.prototype.toString`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="6394:6442" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="6444:6487" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="6561:6594" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="6658:6849" ph="/** The base implementation of `getTag` without fallbacks for buggy environments. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="6877:7077" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="6900:6962" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="7079:7659" ph="/** Checks if `value` is the ...*/" />
+            <marker date="1503052224000" expanded="true" signature="7685:7783" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="7785:7828" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="7982:8319" ph="/** Checks if `value` is classified as a `Function` object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="8347:8665" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="8373:8396" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="8399:8552" ph="//..." />
+            <marker date="1503052224000" expanded="true" signature="8667:8716" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="8763:8816" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="8846:8987" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="8993:9179" ph="/** Checks if `func` has its source masked. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="9204:9254" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="9256:9299" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="9339:9397" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="9442:9600" ph="/** Converts `func` to its source code. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="9625:9791" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="9647:9776" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="9657:9704" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="9726:9759" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="9793:9908" ph="/** Used to match `RegExp` ...*/" />
+            <marker date="1503052224000" expanded="true" signature="9952:10001" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="10053:10096" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="10170:10228" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="10269:10317" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="10368:10412" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="10597:10815" ph="/** The base implementation of `_.isNative` without bad shim checks. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="10845:11018" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="10890:10913" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="11020:11230" ph="/** Gets the value at `key` of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="11262:11316" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="11318:11561" ph="/** Gets the native function at `key` of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="11594:11684" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="11686:11750" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="11800:11903" ph="/** Removes all key-value entries from the hash. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="11925:12003" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="12005:12283" ph="/** Removes `key` and its value from the hash. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="12309:12419" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="12421:12473" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="12525:12568" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="12608:12656" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="12711:12891" ph="/** Gets the hash value for `key`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="12914:13125" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="12964:13056" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="13127:13170" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="13210:13258" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="13313:13545" ph="/** Checks if a hash value for `key` exists. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="13568:13685" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="13687:13739" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="13793:14019" ph="/** Sets the hash `key` to `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="14049:14213" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="14215:14337" ph="/** Creates a hash object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="14361:14575" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="14500:14573" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="14767:14881" ph="/** Removes all key-value entries from the list cache. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="14908:14950" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="14952:15632" ph="/** Performs a ...*/" />
+            <marker date="1503052224000" expanded="true" signature="15659:15728" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="15730:15988" ph="/** Gets the index at which the `key` is found in `array` of key-value pairs. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="16023:16157" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16073:16142" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16110:16138" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16159:16202" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="16238:16271" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="16305:16550" ph="/** Removes `key` and its value from the list cache. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="16581:16850" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16668:16691" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16753:16774" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16780:16818" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="16852:17043" ph="/** Gets the list cache value for `key`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="17071:17191" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="17193:17436" ph="/** Checks if a list cache value for `key` exists. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="17464:17515" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="17517:17760" ph="/** Sets the list cache `key` to `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="17795:17989" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="17882:17933" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="17939:17972" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="17991:18120" ph="/** Creates an list cache object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="18149:18363" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="18288:18361" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="18610:18674" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="18710:18816" ph="/** Removes all key-value entries from the map. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="18842:18967" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="18879:18964" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="18969:19169" ph="/** Checks if `value` is suitable for use as unique object key. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="19196:19369" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="19371:19542" ph="/** Gets the data for `map`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="19573:19698" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="19700:19937" ph="/** Removes `key` and its value from the map. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="19967:20071" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="20073:20256" ph="/** Gets the map value for `key`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="20283:20327" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="20329:20564" ph="/** Checks if a map value for `key` exists. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="20591:20635" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="20637:20871" ph="/** Sets the map `key` to `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="20905:21050" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="21052:21204" ph="/** Creates a map cache object to store key-value pairs. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="21232:21446" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="21371:21444" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="21682:21734" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="21788:21985" ph="/** Adds `value` to the array cache. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="22014:22078" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="22080:22297" ph="/** Checks if `value` is in the array cache. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="22326:22364" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="22366:22512" ph="/** Creates an array cache object to store unique values. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="22539:22730" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="22692:22728" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="22865:23307" ph="/** The base implementation of `_.findIndex` and `_.findLastIndex` without ...*/" />
+            <marker date="1503052224000" expanded="true" signature="23371:23597" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="23502:23582" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="23551:23578" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="23599:23809" ph="/** The base implementation of `_.isNaN` without support for number objects. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="23836:23865" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="23867:24216" ph="/** A specialized version of `_.indexOf` which performs strict equality ...*/" />
+            <marker date="1503052224000" expanded="true" signature="24265:24433" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="24353:24418" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="24387:24414" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="24435:24752" ph="/** The base implementation of `_.indexOf` without `fromIndex` bounds checks. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="24799:24922" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="24924:25224" ph="/** A specialized version of `_.includes` for arrays without support for ...*/" />
+            <marker date="1503052224000" expanded="true" signature="25262:25370" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="25372:25707" ph="/** This function is like `arrayIncludes` except that it accepts a comparator. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="25761:25949" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="25858:25931" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="25901:25927" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="25951:26200" ph="/** Checks if a `cache` value for `key` exists. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="26231:26259" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="26261:26325" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="26361:26537" ph="/** This method returns `undefined`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="26554:26586" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="26588:26738" ph="/** Converts `set` to an array of its values. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="26764:26902" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="26847:26881" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="26904:26961" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="26985:27141" ph="/** Creates a set object of `values`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="27242:27271" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="27274:27334" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="27364:27708" ph="/** The base implementation of `_.uniqBy` without support for iteratee shorthands. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="27756:28885" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="27919:27980" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28020:28198" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28085:28122" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28206:28246" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28283:28866" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28467:28710" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28530:28619" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28574:28611" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28640:28678" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28763:28862" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28792:28830" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="28887:29281" ph="/** Lodash (Custom Build) &lt;https://lodash.com/&gt; ...*/" />
+            <marker date="1503052224000" expanded="true" signature="29282:29823" ph="/** Creates a duplicate-free version of an array, using ...*/" />
+            <marker date="1503052224000" expanded="true" signature="29845:29905" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="29978:30087" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30171:30287" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30387:30740" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30406:30468" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30504:30638" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30570:30630" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30670:30718" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30842:30929" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="30932:31037" ph="/** Removes all key-value entries from the stack. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="31060:31113" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="31115:31351" ph="/** Removes `key` and its value from the stack. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="31378:31488" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="31490:31672" ph="/** Gets the stack value for `key`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="31696:31732" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="31734:31968" ph="/** Checks if a stack value for `key` exists. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="31992:32028" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="32030:32090" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="32122:32357" ph="/** Sets the stack `key` to `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="32388:32748" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="32451:32682" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="32541:32630" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="32750:32904" ph="/** Creates a stack cache object to store key-value pairs. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="32929:33010" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="33213:33545" ph="/** A specialized version of `_.some` for arrays without support for iteratee ...*/" />
+            <marker date="1503052224000" expanded="true" signature="33583:33777" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="33680:33759" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="33729:33755" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="33779:33833" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="33901:34509" ph="/** A specialized version of `baseIsEqualDeep` for arrays with support for ...*/" />
+            <marker date="1503052224000" expanded="true" signature="34584:36230" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="34774:34797" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="34904:34938" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35176:36159" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35265:35442" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35475:35565" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35497:35524" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35650:35984" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35709:35927" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35858:35915" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="35930:35978" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="36113:36155" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="36232:36265" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="36301:36457" ph="/** Converts `map` to its key-value pairs. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="36483:36633" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="36571:36612" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="36635:36689" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="36757:36800" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="37183:37240" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="37366:38182" ph="/** A specialized version of `baseIsEqualDeep` for comparing objects of ...*/" />
+            <marker date="1503052224000" expanded="true" signature="38262:40122" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="38279:40104" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="38302:38496" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="38407:38438" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="38522:38695" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="38645:38676" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="38752:38897" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="38759:38863" ph="//..." />
+            <marker date="1503052224000" expanded="true" signature="38917:38992" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="39033:39276" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="39040:39239" ph="//..." />
+            <marker date="1503052224000" expanded="true" signature="39294:39326" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="39344:39972" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="39494:39525" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="39625:39667" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="39993:40100" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="40019:40100" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="40124:40323" ph="/** Appends the elements of `values` to `array`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="40358:40531" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="40465:40513" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="40533:40964" ph="/** Checks if `value` is classified as an `Array` object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="40995:41453" ph="/** The base implementation of `getAllKeys` and `getAllKeysIn` which uses ...*/" />
+            <marker date="1503052224000" expanded="true" signature="41509:41621" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="41623:41911" ph="/** A specialized version of `_.filter` for arrays without support for ...*/" />
+            <marker date="1503052224000" expanded="true" signature="41951:42223" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="42087:42204" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="42159:42200" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="42225:42547" ph="/** This method returns a new empty array. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="42569:42585" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="42587:42630" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="42670:42703" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="42768:42856" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="42911:43093" ph="/** Creates an array of the own enumerable symbols of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="43160:43359" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="43184:43204" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="43296:43355" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="43362:43674" ph="/** The base implementation of `_.times` without support for iteratee shorthands ...*/" />
+            <marker date="1503052224000" expanded="true" signature="43707:43836" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="43775:43817" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="43838:44334" ph="/** Checks if `value` is object-like. A value is object-like if it's not `null` ...*/" />
+            <marker date="1503052224000" expanded="true" signature="44364:44419" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="44421:44464" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="44504:44687" ph="/** The base implementation of `_.isArguments`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="44720:44787" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="44789:44832" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="44872:44920" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="44975:45008" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="45075:45461" ph="/** Checks if `value` is likely an `arguments` object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="45568:45696" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="45699:45908" ph="/** This method returns `false`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="45930:45949" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="45951:45989" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="46080:46117" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="46218:46280" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="46352:46385" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="46441:46529" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="46590:46920" ph="/** Checks if `value` is a buffer. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="46966:47023" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="47066:47112" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="47149:47421" ph="/** Checks if `value` is a valid array-like index. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="47454:47645" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="47647:47704" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="47749:48293" ph="/** Checks if `value` is a valid array-like length. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="48319:48424" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="48426:48469" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="49387:49448" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="50183:50403" ph="/** The base implementation of `_.isTypedArray` without Node.js optimizations. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="50437:50539" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="50541:50758" ph="/** The base implementation of `_.unary` without support for storing metadata. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="50784:50843" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="50811:50840" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="50845:50883" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="50976:51013" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="51118:51180" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="51260:51311" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="51370:51415" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="51443:51549" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="51451:51534" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="51555:51587" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="51647:51995" ph="/** Checks if `value` is classified as a typed array. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="52083:52126" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="52166:52214" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="52269:52542" ph="/** Creates an array of the enumerable property names of the array-like `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="52584:53592" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="52958:53573" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="53538:53569" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="53594:53637" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="53678:53869" ph="/** Checks if `value` is likely a prototype object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="53898:54048" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="54050:54303" ph="/** Creates a unary function that invokes `func` with its argument transformed. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="54338:54404" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="54363:54401" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="54406:54494" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="54543:54586" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="54627:54675" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="54731:54940" ph="/** The base implementation of `_.keys` which doesn't treat sparse arrays as dense. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="54967:55211" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="54997:55033" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="55087:55192" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="55157:55188" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="55213:55826" ph="/** Checks if `value` is array-like. A value is considered array-like if it's ...*/" />
+            <marker date="1503052224000" expanded="true" signature="55855:55930" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="55932:56559" ph="/** Creates an array of the own enumerable property names of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="56582:56658" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="56660:56876" ph="/** Creates an array of own enumerable property names and symbols of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="56905:56959" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="56961:57015" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="57049:57092" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="57132:57180" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="57235:57851" ph="/** A specialized version of `baseIsEqualDeep` for objects with support for ...*/" />
+            <marker date="1503052224000" expanded="true" signature="57928:59799" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58170:58193" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58237:58374" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58343:58370" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58482:58516" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58653:59272" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="58766:58941" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="59175:59217" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="59300:59727" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="59694:59723" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="59801:59865" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="59911:59975" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="60019:60083" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="60127:60170" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="60389:60436" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="60639:60787" ph="/** Gets the `toStringTag` of `value`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="61187:61712" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="61216:61709" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="61394:61686" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="61422:61680" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="61456:61478" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="61506:61523" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="61555:61574" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="61602:61619" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="61651:61672" ph="..." />
+            <marker date="1503052224000" expanded="true" signature="61738:61792" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="61826:61869" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="61975:62018" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="62058:62106" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="62161:62865" ph="/** A specialized version of `baseIsEqual` for arrays and objects which performs ...*/" />
+            <marker date="1503052224000" expanded="true" signature="62945:64406" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="63377:63479" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="63405:63432" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="63510:63751" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="63795:64253" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="63997:64249" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="64272:64295" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="64408:64960" ph="/** The base implementation of `_.isEqual` which supports partial comparisons ...*/" />
+            <marker date="1503052224000" expanded="true" signature="65024:65295" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="65049:65071" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="65160:65212" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="65297:65351" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="65415:65867" ph="/** The base implementation of `_.isMatch` without support for iteratee shorthands. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="65928:66951" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66041:66066" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66112:66295" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66264:66291" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66323:66934" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66471:66564" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66527:66558" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66570:66930" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66623:66713" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66893:66924" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="66953:67204" ph="/** Checks if `value` is suitable for strict equality comparisons, i.e. `===`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="67240:67289" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="67291:67483" ph="/** Gets the property names, values, and compare flags of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="67514:67741" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="67595:67722" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="67743:68038" ph="/** A specialized version of `matchesProperty` for source values suitable ...*/" />
+            <marker date="1503052224000" expanded="true" signature="68087:68273" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68115:68270" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68141:68168" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68275:68489" ph="/** The base implementation of `_.matches` which doesn't clone `source`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="68519:68791" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68609:68684" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68711:68788" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="68793:68836" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="68875:69231" ph="/** Checks if `value` is classified as a `Symbol` primitive or object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="69257:69360" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="69362:69420" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="69522:69788" ph="/** Checks if `value` is a property name and not a property path. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="69819:70141" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="69843:69866" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="70001:70023" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="70143:70174" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="70221:71674" ph="/** Creates a function that memoizes the result of `func`. If `resolver` is ...*/" />
+            <marker date="1503052224000" expanded="true" signature="71708:72250" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="71798:71845" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="71874:72176" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="72022:72058" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="72301:72347" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="72377:72647" ph="/** A specialized version of `_.memoize` which clears the memoized function's ...*/" />
+            <marker date="1503052224000" expanded="true" signature="72677:72863" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="72722:72813" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="72765:72793" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="72865:72923" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="73068:73119" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="73152:73323" ph="/** Converts `string` to a property path array. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="73374:73630" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="73428:73454" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="73523:73609" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="73634:73916" ph="/** A specialized version of `_.map` for arrays without support for iteratee ...*/" />
+            <marker date="1503052224000" expanded="true" signature="73952:74161" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="74079:74142" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="74163:74220" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="74246:74303" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="74437:74643" ph="/** The base implementation of `_.toString` which doesn't convert nullish ...*/" />
+            <marker date="1503052224000" expanded="true" signature="74673:75145" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="74784:74807" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="74830:74952" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="74976:75042" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="75147:75570" ph="/** Converts `value` to a string. An empty string is returned for `null` ...*/" />
+            <marker date="1503052224000" expanded="true" signature="75596:75650" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="75652:75881" ph="/** Casts `value` to a path array if it's not one. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="75915:76037" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="75939:75962" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="76039:76096" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="76122:76299" ph="/** Converts `value` to a string key if it's not a string or symbol. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="76322:76501" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="76375:76398" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="76503:76753" ph="/** The base implementation of `_.get` without support for default values. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="76785:77018" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="76910:76958" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="77020:77675" ph="/** Gets the value at `path` of `object`. If the resolved value is ...*/" />
+            <marker date="1503052224000" expanded="true" signature="77717:77842" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="77844:78102" ph="/** The base implementation of `_.hasIn` without support for deep paths. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="78135:78188" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="78190:78480" ph="/** Checks if `path` exists on `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="78521:79019" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="78653:78799" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="78749:78769" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="78835:78859" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="79021:79575" ph="/** Checks if `path` is a direct or inherited property of `object`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="79605:79669" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="79671:79725" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="79793:80051" ph="/** The base implementation of `_.matchesProperty` which doesn't clone `srcValue`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="80097:80468" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="80150:80214" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="80241:80465" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="80470:80766" ph="/** This method returns the first argument it receives. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="80792:80811" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="80813:81023" ph="/** The base implementation of `_.property` without support for deep paths. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="81051:81140" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="81079:81137" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="81142:81355" ph="/** A specialized version of `baseProperty` which supports deep paths. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="81388:81458" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="81416:81455" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="81460:81952" ph="/** Creates a function that returns the value at `path` of a given object. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="81977:82055" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82057:82238" ph="/** The base implementation of `_.iteratee`. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="82268:82700" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82272:82426" ph="//..." />
+            <marker date="1503052224000" expanded="true" signature="82461:82484" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82506:82532" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82565:82672" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82702:82904" ph="/** Creates a `_.find` or `_.findLast` function. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="82940:83402" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="82994:83399" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="83069:83246" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="83404:83461" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83480:83533" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83562:83621" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83662:83705" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83738:83780" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83813:83878" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="83909:84279" ph="/** Converts `value` to a number. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="84305:84870" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="84339:84362" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="84386:84407" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="84431:84566" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="84599:84645" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="84872:84929" ph="/**...*/" />
+            <marker date="1503052224000" expanded="true" signature="84998:85401" ph="/** Converts `value` to a finite number. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="85427:85678" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="85443:85484" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="85565:85638" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="85680:86202" ph="/** Converts `value` to an integer. ...*/" />
+            <marker date="1503052224000" expanded="true" signature="86229:86371" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="86373:86461" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="86489:87532" ph="/** This method is like `_.find` except that it returns the index of the first ...*/" />
+            <marker date="1503052224000" expanded="true" signature="87581:87860" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="87647:87667" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="87745:87792" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="87862:88256" ph="/** Lodash (Custom Build) &lt;https://lodash.com/&gt; ...*/" />
+            <marker date="1503052224000" expanded="true" signature="88257:89418" ph="/** Iterates over elements of `collection`, returning the first element ...*/" />
+            <marker date="1503052224000" expanded="true" signature="89489:89522" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="89562:89591" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="89635:89836" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="89882:89886" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="89930:89934" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="90009:90072" ph="/*...*/" />
+            <marker date="1503052224000" expanded="true" signature="90364:90602" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="90478:90598" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="90690:91049" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="90770:91047" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="90933:91039" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="91599:91696" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="91641:91694" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="91849:92169" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="91982:92165" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="92263:92449" ph="{...}" />
+            <marker date="1503052224000" expanded="true" signature="92305:92447" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1131">
-          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        <state relative-caret-position="638">
+          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
           <folding>
-            <marker date="1502914499000" expanded="false" signature="7:151" ph="..." />
-            <marker date="1502914499000" expanded="true" signature="511:745" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="619:741" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="827:1185" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="912:1183" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="1069:1175" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="1577:1674" ph="{...}" />
-            <marker date="1502914499000" expanded="true" signature="1619:1672" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/main.dist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <marker date="1502916210000" expanded="true" signature="40:66" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="127:154" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="224:372" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="277:339" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="440:489" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="548:951" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="661:927" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="836:921" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1002:1046" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1095:1251" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1115:1187" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
-            <marker date="1502916210000" expanded="true" signature="1214:1247" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1323:1605" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1467:1549" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
-            <marker date="1502916210000" expanded="true" signature="1572:1601" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1626:2939" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1656:1733" ph="[...]" />
-            <marker date="1502916210000" expanded="true" signature="1779:1820" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="1858:1921" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2017:2642" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2183:2249" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2358:2499" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2562:2636" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2685:2749" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="2763:2937" ph="{&quot;getUserSearchOptions&quot;: getUserSearchOptions...}" />
-            <marker date="1502916210000" expanded="true" signature="3012:3121" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="3205:3321" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="3688:3928" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="3802:3924" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="4016:4380" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="4101:4378" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="4264:4370" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="5853:5854" ph="{...}" />
-            <marker date="1502916210000" expanded="true" signature="4856:4909" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <marker date="1502916120000" expanded="false" signature="7:85" ph="..." />
-            <marker date="1502916120000" expanded="true" signature="122:1135" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="145:197" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="209:401" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="233:325" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
-            <marker date="1502916120000" expanded="true" signature="352:393" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="434:760" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="590:692" ph="{&quot;type&quot;: &quot;GET&quot;...}" />
-            <marker date="1502916120000" expanded="true" signature="715:752" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="787:1133" ph="{...}" />
-            <marker date="1502916120000" expanded="true" signature="941:1065" ph="{&quot;type&quot;: &quot;POST&quot;...}" />
-            <marker date="1502916120000" expanded="true" signature="1088:1125" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiQueryBuilder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding>
-            <marker date="1502915797000" expanded="true" signature="37:820" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="73:130" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="161:574" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="254:542" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="439:532" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="602:818" ph="{...}" />
-            <marker date="1502915797000" expanded="true" signature="691:784" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="7:178" ph="..." />
+            <marker date="1503051577000" expanded="true" signature="252:315" ph="/*...*/" />
+            <marker date="1503051577000" expanded="true" signature="601:833" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="709:829" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="915:1268" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="995:1266" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1152:1258" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1776:1873" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="1818:1871" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2020:2334" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2147:2330" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2422:2590" ph="{...}" />
+            <marker date="1503051577000" expanded="true" signature="2464:2588" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        <state relative-caret-position="192">
+          <caret line="144" column="58" lean-forward="false" selection-start-line="144" selection-start-column="58" selection-end-line="144" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ApiParams.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <element signature="e#969#976#1" expanded="true" />
+            <marker date="1503052391000" expanded="true" signature="31:364" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="54:88" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="109:144" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="172:361" ph="{...}" />
+            <marker date="1503052391000" expanded="true" signature="233:320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repositories/ShoeAPI/ShoeInventory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>

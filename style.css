@@ -121,8 +121,10 @@ button:hover {
 }
 
 .column.is-4 {
-    width: 33.33333%;
+    width: 25%;
     flex: none;
+    border: solid;
+    margin-bottom: 4em;
 }
 
 .box {
@@ -182,7 +184,7 @@ button:hover {
 }
 
 #buyButton {
-    padding: 0.5em 8em;
+    flex: 1;
 }
 
 .addStock.modal {
@@ -258,8 +260,13 @@ button:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .columns{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .column.is-4 {
-        width: 100%;
+        width: 50%;
     }
 
     nav {

@@ -4,7 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/ggsbv/shoe-catalogue-api-frontend.git",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "global": "^4.3.2",
+    "lodash": "^4.17.4",
+    "lodash-cli": "^4.17.4"
+  },
   "devDependencies": {
     "rollup-plugin-buble": "^0.15.0"
   }

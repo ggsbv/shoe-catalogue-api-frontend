@@ -11,8 +11,8 @@ export default class ApiParams {
         let uri = '';
 
         for (let category in query) {
-            uri += category + '/' + query[category] + '/';
-        };
+            uri += category.replace('_', '') + '/' + query[category] + '/';
+        }
 
         return this.apiUrl + uri;
     };

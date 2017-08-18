@@ -45,10 +45,17 @@ export default function TheDOM() {
         return shoeInputFields;
     };
 
+    const clearShoeInputFields = function () {
+      shoeInputFields.forEach((elementSelector) => {
+          document.querySelector(elementSelector).value = "";
+      });
+    };
+
     return {
         getUserSearchOptions,
         searchButton,
         sortOptions,
         getShoeInputFields,
+        clearShoeInputFields
     }
 };
