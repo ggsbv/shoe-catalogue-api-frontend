@@ -2,6 +2,10 @@ html, body {
     height: 100%
 }
 
+a {
+    display: block;
+}
+
 body {
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
@@ -32,16 +36,16 @@ nav > h1 {
 }
 
 .nav-item {
-    padding: 1.2em 2em 0em 2em;
 }
 
 .nav-item > a {
     color: white;
     text-decoration: none;
+    padding: 1.2em 2em 1.2em 2em;
 }
 
-.nav-item:hover {
-    padding: 1.2em 2em 0em 2em;
+.nav-item > a:hover {
+    padding: 1.2em 2em 1.2em 2em;
     border-bottom: solid white thin;
     cursor: pointer;
 }
@@ -133,7 +137,6 @@ button:hover {
     border: 1px solid #a6e8ed;
     border-radius: 5px;
     background: #a6e8ed;
-
 }
 
 .column-item {
@@ -199,6 +202,81 @@ button:hover {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+.cart-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.cart-table {
+    background-color: #fefefe;
+    border: 1px solid #888;
+}
+
+.cart-table > ul, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.cart-table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    width: 30em;
+}
+
+.cart-table > li:nth-child(even) {
+    background: darkseagreen;
+}
+
+.cart-table-row > h3 {
+    margin: 0;
+}
+
+.cart-table-row:nth-child(even) {
+    background: #cff9fc;
+}
+
+.cart-table-row:first-child {
+    color: #156e75;
+}
+
+.cart-header {
+    background-color: #4AB8BF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em;
+    color: white;
+}
+
+.cart-header > h3 {
+    color: white;
+}
+
+.cart-footer {
+    background-color: #4AB8BF;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1em;
+    color: white;
+}
+
+.cart-button {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.cart-button > button {
+    padding: 1em 6em;
+}
+
 .addStock-form {
     justify-content: space-evenly;
     align-items: center;
@@ -212,6 +290,7 @@ button:hover {
     display: flex;
     padding: 0em 2em;
     justify-content: space-between;
+    align-items: center;
     background-color: #4AB8BF;
     color: white;
     margin: 0;

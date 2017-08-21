@@ -9,8 +9,5 @@ export { default as isObject } from './isObject.js';
 export { default as isObjectLike } from './isObjectLike.js';
 export { default as isSymbol } from './isSymbol.js';
 export { default as isTypedArray } from './isTypedArray.js';
-export { default as toFinite } from './toFinite.js';
-export { default as toInteger } from './toInteger.js';
-export { default as toNumber } from './toNumber.js';
 export { default as toString } from './toString.js';
 export { default } from './lang.default.js';

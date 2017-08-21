@@ -1,8 +1,9 @@
 import _find from '../lodash-es/find';
+import _sumBy from '../lodash-es/sumBy';
 
 export default class Cart {
-    constructor(contents) {
-        this.contents = contents;
+    constructor() {
+        this.contents = [];
     }
 
     get() {
@@ -10,19 +11,19 @@ export default class Cart {
     }
 
     add(shoe) {
-        let match = _find(this.contents, (currentShoe) => currentShoe.id === shoe.id);
+        let match = _find(this.contents, (currentShoe) => currentShoe._id === shoe._id);
 
-        match ? match.total++ : (
-            shoe['total'] = 1,
+        match ? match.qty++ : (
+            shoe['qty'] = 1,
             this.contents.push(shoe)
         );
     }
 
-    remove() {
-
+    clear() {
+        this.contents = [];
     }
 
-    clear() {
-
+    calculateTotal() {
+        return _sumBy(this.contents, (shoe) => shoe.qty * shoe.price);
     }
 }

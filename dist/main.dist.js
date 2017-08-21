@@ -16,6 +16,10 @@ ApiParams.prototype.forShoeSearch = function forShoeSearch (query) {
     return this.apiUrl + uri;
 };
 
+ApiParams.prototype.forShoeSale = function forShoeSale () {
+    return this.apiUrl + 'sold';
+};
+
 var ApiQueryBuilder = function ApiQueryBuilder(elementSelectors) {
     this.elementSelectors = elementSelectors;
 };
@@ -96,6 +100,19 @@ ShoeInventory.prototype.find = function find (shoeId) {
     }).then(function(shoe) {
         console.log(shoe);
         return shoe;
+    });
+};
+
+ShoeInventory.prototype.sale = function sale (shoes) {
+    console.log(this.apiParams.forShoeSale());
+
+    return $.ajax({
+        type : "POST",
+        url : this.apiParams.forShoeSale(),
+        data : JSON.stringify(shoes),
+        contentType : 'application/json'
+    }).then(function(result) {
+        console.log(result);
     });
 };
 
@@ -3303,8 +3320,68 @@ function findIndex(array, predicate, fromIndex) {
  */
 var find = createFind(findIndex);
 
-var Cart = function Cart(contents) {
-    this.contents = contents;
+/**
+ * The base implementation of `_.sum` and `_.sumBy` without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} array The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {number} Returns the sum.
+ */
+function baseSum(array, iteratee) {
+  var result,
+      index = -1,
+      length = array.length;
+
+  while (++index < length) {
+    var current = iteratee(array[index]);
+    if (current !== undefined) {
+      result = result === undefined ? current : (result + current);
+    }
+  }
+  return result;
+}
+
+/**
+ * Lodash (Custom Build) <https://lodash.com/>
+ * Build: `lodash modularize exports="es" include="sumBy"`
+ * Copyright JS Foundation and other contributors <https://js.foundation/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+/**
+ * This method is like `_.sum` except that it accepts `iteratee` which is
+ * invoked for each element in `array` to generate the value to be summed.
+ * The iteratee is invoked with one argument: (value).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Math
+ * @param {Array} array The array to iterate over.
+ * @param {Function} [iteratee=_.identity] The iteratee invoked per element.
+ * @returns {number} Returns the sum.
+ * @example
+ *
+ * var objects = [{ 'n': 4 }, { 'n': 2 }, { 'n': 8 }, { 'n': 6 }];
+ *
+ * _.sumBy(objects, function(o) { return o.n; });
+ * // => 20
+ *
+ * // The `_.property` iteratee shorthand.
+ * _.sumBy(objects, 'n');
+ * // => 20
+ */
+function sumBy(array, iteratee) {
+  return (array && array.length)
+    ? baseSum(array, baseIteratee(iteratee, 2))
+    : 0;
+}
+
+var Cart = function Cart() {
+    this.contents = [];
 };
 
 Cart.prototype.get = function get () {
@@ -3312,27 +3389,28 @@ Cart.prototype.get = function get () {
 };
 
 Cart.prototype.add = function add (shoe) {
-    var match = find(this.contents, function (currentShoe) { return currentShoe.id === shoe.id; });
+    var match = find(this.contents, function (currentShoe) { return currentShoe._id === shoe._id; });
 
-    match ? match.total++ : (
-        shoe['total'] = 1,
+    match ? match.qty++ : (
+        shoe['qty'] = 1,
         this.contents.push(shoe)
     );
 };
 
-Cart.prototype.remove = function remove () {
-
-};
-
 Cart.prototype.clear = function clear () {
-
+    this.contents = [];
 };
 
-var shoeInventory = new ShoeInventory('http://localhost:3006/api/shoes/'/*'https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/'*/);
+Cart.prototype.calculateTotal = function calculateTotal () {
+    return sumBy(this.contents, function (shoe) { return shoe.qty * shoe.price; });
+};
+
+var shoeInventory = new ShoeInventory('https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
 var theDOM = new TheDOM();
 var searchTemplate = new HandlebarsTemplate('#searchTemplate');
 var resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
-var cart = new Cart([]);
+var cartTemplate = new HandlebarsTemplate('#cartTemplate');
+var cart = new Cart();
 
 // populate the dropdown menus with shoe categories when the page loads
 window.onload = function () {
@@ -3387,6 +3465,37 @@ document.querySelector('.addStockButton').addEventListener('click', function (ev
 document.querySelector('#searchResultsOutput').addEventListener('click', function (event) {
    if (event.target.id === 'buyButton') {
        console.log(event.target.value);
-       shoeInventory.find(event.target.value).then(function (shoe) { return cart.add(shoe); });
+       shoeInventory.find(event.target.value).then(function (shoe) {
+           cart.add(shoe);
+       });
    }
+});
+
+var cartModal = document.querySelector('.cart-modal');
+
+// if user clicks on Admin, open the add stock modal
+document.querySelector('#openCartModal').addEventListener('click', function () {
+    cartModal.style.display = 'flex';
+    cartTemplate.render('.cart-modal', { shoe: cart.get(), total: cart.calculateTotal() });
+});
+
+// if user clicks on close button, close the modal
+document.querySelector('.cart-modal').addEventListener('click', function () { return cartModal.style.display = 'none'; });
+
+// if user clicks anywhere other than the modal, close the modal
+window.addEventListener('click', function (event) {
+    if (event.target === cartModal) {
+        cartModal.style.display = 'none';
+    }
+});
+
+document.querySelector('.cart-modal').addEventListener('click', function (event) {
+    if (event.target.id === 'checkoutButton') {
+        shoeInventory.sale(cart.get())
+            .then(function () {
+                cart.clear();
+                cartModal.style.display = 'none';
+                alert("You have successfully checked out! Your shoes will be delivered shortly.");
+            });
+    }
 });

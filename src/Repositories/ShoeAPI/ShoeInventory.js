@@ -53,4 +53,17 @@ export default class ShoeInventory {
             return shoe;
         });
     }
+
+    sale(shoes) {
+        console.log(this.apiParams.forShoeSale());
+
+        return $.ajax({
+            type : "POST",
+            url : this.apiParams.forShoeSale(),
+            data : JSON.stringify(shoes),
+            contentType : 'application/json'
+        }).then(function(result) {
+            console.log(result);
+        });
+    }
 };

@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
+
     <title>Shoe Catalogue</title>
 </head>
 <body>
@@ -15,11 +18,11 @@
     <h1>Shoe Catalogue</h1>
 
     <ul>
-        <li class="nav-item"><a href="#">About</a></li>
         <li class="nav-item"><a href="#">Home</a></li>
         <li class="nav-item"><a href="#">Terms & Conditions</a></li>
         <li class="nav-item"><a href="#">Contact Us</a></li>
         <li class="nav-item"><a href="#" id="openModal">Admin</a></li>
+        <li class="nav-item"><a href="#" id="openCartModal">Cart</a></li>
     </ul>
 </nav>
 
@@ -62,6 +65,48 @@
     </form>
     </div>
 
+<div class="cart-modal">
+
+</div>
+
+<script id="cartTemplate" type="text/x-handlebars">
+    <div class="cart-table">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <i class="material-icons close">remove_shopping_cart</i>
+        </div>
+
+        <ul>
+            <li class="cart-table-row">
+                <h3>Qty</h3>
+                <h3>Brand</h3>
+                <h3>Size</h3>
+                <h3>Color</h3>
+                <h3>Price</h3>
+            </li>
+
+            {{#each shoe}}
+            <li class="cart-table-row">
+                <span>{{this.qty}} &times;</span>
+                <span>{{this.brand}}</span>
+                <span>{{this.size}}</span>
+                <span>{{this.color}}</span>
+                <span>R{{this.price}}</span>
+            </li>
+            {{/each}}
+
+            <div class="cart-footer">
+                <h3>Total:</h3><h3>R{{total}}</h3>
+            </div>
+        </ul>
+
+        <div class="cart-button">
+            <button id="checkoutButton">CHECKOUT</button>
+        </div>
+    </div>
+</script>
+
+
 <div id="wrapper">
     <div id="searchStockDiv">
 
@@ -82,7 +127,7 @@
 
         <div class="select-group">
           <h2>Size: </h2>
-          <select id="sizeSelect" >
+          <select id="sizeSelect" class="searchSelect">
             <option value="All">All</option>
 
             {{#each shoe.size}}

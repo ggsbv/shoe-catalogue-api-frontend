@@ -16,5 +16,9 @@ export default class ApiParams {
 
         return this.apiUrl + uri;
     };
+
+    forShoeSale() {
+        return this.apiUrl + 'sold';
+    }
 }
 
