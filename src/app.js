@@ -3,11 +3,12 @@ import TheDOM from './TheDOM';
 import HandlebarsTemplate from './HandlebarsTemplate';
 import Cart from './Cart';
 
-var shoeInventory = new ShoeInventory('https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
+var shoeInventory = new ShoeInventory('http://localhost:3006/api/shoes/');//'https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
 var theDOM = new TheDOM();
 let searchTemplate = new HandlebarsTemplate('#searchTemplate');
 let resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
 let cartTemplate = new HandlebarsTemplate('#cartTemplate');
+let notificationTemplate = new HandlebarsTemplate('#notification-template');
 let cart = new Cart();
 
 // populate the dropdown menus with shoe categories when the page loads
@@ -57,14 +58,16 @@ document.querySelector('.addStockButton').addEventListener('click', (event) => {
 
             searchTemplate.renderDropdowns('#searchStockDiv', updatedShoeStock);
             theDOM.sortOptions('#sizeSelect');
+            alert('Shoe has been added to stock.');
         });
 });
 
 document.querySelector('#searchResultsOutput').addEventListener('click', (event) => {
    if (event.target.id === 'buyButton') {
-       console.log(event.target.value);
        shoeInventory.find(event.target.value).then((shoe) => {
            cart.add(shoe);
+           alert("Successfully added to cart!");
+           // notificationTemplate.render(".notification", { message : "Successfully added to card!" });
        });
    }
 });
@@ -94,6 +97,11 @@ document.querySelector('.cart-modal').addEventListener('click', (event) => {
                 cart.clear();
                 cartModal.style.display = 'none';
                 alert("You have successfully checked out! Your shoes will be delivered shortly.");
+
+                shoeInventory.filter(theDOM.getUserSearchOptions())
+                    .then((matchingShoes) => {
+                        resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+                    });
             });
     }
 });

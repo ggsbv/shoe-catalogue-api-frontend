@@ -30,16 +30,13 @@ export default class ShoeInventory {
     add(shoeInputFields) {
         let apiQueryBuilder = new ApiQueryBuilder(shoeInputFields);
         let shoe = apiQueryBuilder.buildForAddingShoe();
-        let _all = this.all;
 
         return $.ajax({
             type : "POST",
             url : this.apiParams.forAllShoes(),
             data : shoe,
             contentType : 'application/json'
-        }).then(function() {
-            return _all();
-        });
+        }).then(() => this.all());
     }
 
     find(shoeId) {

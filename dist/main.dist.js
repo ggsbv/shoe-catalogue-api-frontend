@@ -77,18 +77,17 @@ ShoeInventory.prototype.filter = function filter (userSearchOptions) {
 };
 
 ShoeInventory.prototype.add = function add (shoeInputFields) {
+        var this$1 = this;
+
     var apiQueryBuilder = new ApiQueryBuilder(shoeInputFields);
     var shoe = apiQueryBuilder.buildForAddingShoe();
-    var _all = this.all;
 
     return $.ajax({
         type : "POST",
         url : this.apiParams.forAllShoes(),
         data : shoe,
         contentType : 'application/json'
-    }).then(function() {
-        return _all();
-    });
+    }).then(function () { return this$1.all(); });
 };
 
 ShoeInventory.prototype.find = function find (shoeId) {
@@ -3405,11 +3404,12 @@ Cart.prototype.calculateTotal = function calculateTotal () {
     return sumBy(this.contents, function (shoe) { return shoe.qty * shoe.price; });
 };
 
-var shoeInventory = new ShoeInventory('https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
+var shoeInventory = new ShoeInventory('http://localhost:3006/api/shoes/');//'https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
 var theDOM = new TheDOM();
 var searchTemplate = new HandlebarsTemplate('#searchTemplate');
 var resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
 var cartTemplate = new HandlebarsTemplate('#cartTemplate');
+var notificationTemplate = new HandlebarsTemplate('#notification-template');
 var cart = new Cart();
 
 // populate the dropdown menus with shoe categories when the page loads
@@ -3459,14 +3459,16 @@ document.querySelector('.addStockButton').addEventListener('click', function (ev
 
             searchTemplate.renderDropdowns('#searchStockDiv', updatedShoeStock);
             theDOM.sortOptions('#sizeSelect');
+            alert('Shoe has been added to stock.');
         });
 });
 
 document.querySelector('#searchResultsOutput').addEventListener('click', function (event) {
    if (event.target.id === 'buyButton') {
-       console.log(event.target.value);
        shoeInventory.find(event.target.value).then(function (shoe) {
            cart.add(shoe);
+           alert("Successfully added to cart!");
+           // notificationTemplate.render(".notification", { message : "Successfully added to card!" });
        });
    }
 });
@@ -3496,6 +3498,11 @@ document.querySelector('.cart-modal').addEventListener('click', function (event)
                 cart.clear();
                 cartModal.style.display = 'none';
                 alert("You have successfully checked out! Your shoes will be delivered shortly.");
+
+                shoeInventory.filter(theDOM.getUserSearchOptions())
+                    .then(function (matchingShoes) {
+                        resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+                    });
             });
     }
 });

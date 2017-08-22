@@ -296,6 +296,13 @@ button:hover {
     margin: 0;
 }
 
+.notification {
+    color: white;
+    background-color: #4AB8BF;
+    z-index: 1;
+    display: flex;
+}
+
 .close {
     color: white;
     font-size: 50px;
@@ -355,5 +362,22 @@ button:hover {
 
     h1 {
         margin: 0;
+    }
+
+    #selectInput {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sizeSelect {
+        padding: 1em 15em 1em 1em;
+    }
+
+    #colorSelect {
+        padding: 1em 11em 1em 1em;
+    }
+
+    nav > ul {
+        margin-bottom: 0;
     }
 }
