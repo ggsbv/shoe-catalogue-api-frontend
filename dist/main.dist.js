@@ -3404,105 +3404,142 @@ Cart.prototype.calculateTotal = function calculateTotal () {
     return sumBy(this.contents, function (shoe) { return shoe.qty * shoe.price; });
 };
 
-var shoeInventory = new ShoeInventory('http://localhost:3006/api/shoes/');//'https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
+var shoeInventory = new ShoeInventory('https://shoe-catalogue-api-codex.herokuapp.com/api/shoes/');
 var theDOM = new TheDOM();
 var searchTemplate = new HandlebarsTemplate('#searchTemplate');
 var resultsTemplate = new HandlebarsTemplate('#searchResultsTemplate');
 var cartTemplate = new HandlebarsTemplate('#cartTemplate');
-var notificationTemplate = new HandlebarsTemplate('#notification-template');
 var cart = new Cart();
 
-// populate the dropdown menus with shoe categories when the page loads
-window.onload = function () {
-    // create options for categories for all shoes in the API
-    shoeInventory.all().then(function (shoeStock) {
-        searchTemplate.renderDropdowns('#searchStockDiv', shoeStock);
-        theDOM.sortOptions('#sizeSelect');
-    });
-};
+function EventHandler() {
+    var populateDropdowns = function () {
+        console.log("Window Loaded.");
+        shoeInventory.all().then(function (shoeStock) {
+            searchTemplate.renderDropdowns('#searchStockDiv', shoeStock);
+            theDOM.sortOptions('#sizeSelect');
+        });
+    };
 
-document.querySelector('#searchStockDiv').addEventListener('click', function (event) {
-// when user clicks search button
-    if (event.target.id === 'searchButton') {
-        //display the shoes that match their search query
-        shoeInventory.filter(theDOM.getUserSearchOptions())
-            .then(function (matchingShoes) {
-                resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+    var searchStock = function (event) {
+        if (event.target.id === 'searchButton') {
+            shoeInventory.filter(theDOM.getUserSearchOptions())
+                .then(function (matchingShoes) {
+                    resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+                });
+        }
+    };
+
+    var addToStock = function (event) {
+        event.preventDefault();
+
+        shoeInventory
+            .add(theDOM.getShoeInputFields())
+            .then(function (updatedShoeStock) {
+                theDOM.clearShoeInputFields();
+
+                searchTemplate.renderDropdowns('#searchStockDiv', updatedShoeStock);
+                theDOM.sortOptions('#sizeSelect');
+                alert('Shoe has been added to stock.');
             });
-    }
-});
+    };
 
-// Stock add modal
-var addStockModal = document.querySelector(".addStock");
+    var addToCart = function (event) {
+        if (event.target.id === 'buyButton') {
+            shoeInventory.find(event.target.value).then(function (shoe) {
+                cart.add(shoe);
+                alert("Successfully added to cart!");
+            });
+        }
+    };
+
+    var openAndRenderCart = function () {
+        var cartModal = document.querySelector('.cart-modal');
+
+        cartModal.style.display = 'flex';
+        cartTemplate.render('.cart-modal', { shoe: cart.get(), total: cart.calculateTotal() });
+    };
+
+    var checkout = function (event) {
+        if (event.target.id === 'checkoutButton') {
+            shoeInventory.sale(cart.get())
+                .then(function () {
+                    cart.clear();
+                    cartModal.style.display = 'none';
+                    alert("You have successfully checked out! Your shoes will be delivered shortly.");
+
+                    shoeInventory.filter(theDOM.getUserSearchOptions())
+                        .then(function (matchingShoes) {
+                            resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
+                        });
+                });
+        }
+    };
+
+    var openAddStockModal = function (event) { return document.querySelector('.addStock').style.display = 'flex'; };
+
+    var closeAddStockModal = function (event) { return document.querySelector('.addStock').style.display = 'none'; };
+
+    var closeAddStockModalOnWindowClick = function (event) {
+        var addStock = document.querySelector('.addStock');
+
+        if (event.target === addStock) {
+            addStock.style.display = 'none';
+        }
+    };
+
+    var closeCartModal = function () { return document.querySelector('.cart-modal').style.display = 'none'; };
+
+    var closeCartModalOnWindowClick = function (event) {
+        var cartModal = document.querySelector('.cart-modal');
+
+        if (event.target === cartModal) {
+            cartModal.style.display = 'none';
+        }
+    };
+
+    return {
+        populateDropdowns: populateDropdowns,
+        searchStock: searchStock,
+        addToStock: addToStock,
+        addToCart: addToCart,
+        openAndRenderCart: openAndRenderCart,
+        checkout: checkout,
+        openAddStockModal: openAddStockModal,
+        closeAddStockModal: closeAddStockModal,
+        closeAddStockModalOnWindowClick: closeAddStockModalOnWindowClick,
+        closeCartModal: closeCartModal,
+        closeCartModalOnWindowClick: closeCartModalOnWindowClick
+    }
+}
+
+var eventHandler = new EventHandler();
+
+window.onload = eventHandler.populateDropdowns;
+
+document.querySelector('#searchStockDiv').addEventListener('click', eventHandler.searchStock);
 
 // if user clicks on Admin, open the add stock modal
-document.querySelector('#openModal').addEventListener('click', function () { return addStockModal.style.display = 'flex'; });
+document.querySelector('#openModal').addEventListener('click', eventHandler.openAddStockModal);
 
 // if user clicks on close button, close the modal
-document.querySelector('.close').addEventListener('click', function () { return addStockModal.style.display = 'none'; });
+document.querySelector('.close').addEventListener('click', eventHandler.closeAddStockModal);
 
 // if user clicks anywhere other than the modal, close the modal
-window.addEventListener('click', function (event) {
-    if (event.target === addStockModal) {
-        addStockModal.style.display = 'none';
-    }
-});
+window.addEventListener('click', eventHandler.closeAddStockModalOnWindowClick);
 
 // when user submits a shoe, add the shoe to the shoe inventory
-document.querySelector('.addStockButton').addEventListener('click', function (event) {
-    event.preventDefault();
+document.querySelector('.addStockButton').addEventListener('click', eventHandler.addToStock);
 
-    shoeInventory
-        .add(theDOM.getShoeInputFields())
-        .then(function (updatedShoeStock) {
-            theDOM.clearShoeInputFields();
-
-            searchTemplate.renderDropdowns('#searchStockDiv', updatedShoeStock);
-            theDOM.sortOptions('#sizeSelect');
-            alert('Shoe has been added to stock.');
-        });
-});
-
-document.querySelector('#searchResultsOutput').addEventListener('click', function (event) {
-   if (event.target.id === 'buyButton') {
-       shoeInventory.find(event.target.value).then(function (shoe) {
-           cart.add(shoe);
-           alert("Successfully added to cart!");
-           // notificationTemplate.render(".notification", { message : "Successfully added to card!" });
-       });
-   }
-});
-
-var cartModal = document.querySelector('.cart-modal');
+// when user clicks on "Add to Cart", the shoe should be added to cart
+document.querySelector('#searchResultsOutput').addEventListener('click', eventHandler.addToCart);
 
 // if user clicks on Admin, open the add stock modal
-document.querySelector('#openCartModal').addEventListener('click', function () {
-    cartModal.style.display = 'flex';
-    cartTemplate.render('.cart-modal', { shoe: cart.get(), total: cart.calculateTotal() });
-});
+document.querySelector('#openCartModal').addEventListener('click', eventHandler.openAndRenderCart);
 
 // if user clicks on close button, close the modal
-document.querySelector('.cart-modal').addEventListener('click', function () { return cartModal.style.display = 'none'; });
+document.querySelector('.cart-modal').addEventListener('click', eventHandler.closeCartModal);
 
 // if user clicks anywhere other than the modal, close the modal
-window.addEventListener('click', function (event) {
-    if (event.target === cartModal) {
-        cartModal.style.display = 'none';
-    }
-});
+window.addEventListener('click', eventHandler.closeCartModalOnWindowClick);
 
-document.querySelector('.cart-modal').addEventListener('click', function (event) {
-    if (event.target.id === 'checkoutButton') {
-        shoeInventory.sale(cart.get())
-            .then(function () {
-                cart.clear();
-                cartModal.style.display = 'none';
-                alert("You have successfully checked out! Your shoes will be delivered shortly.");
-
-                shoeInventory.filter(theDOM.getUserSearchOptions())
-                    .then(function (matchingShoes) {
-                        resultsTemplate.render("#searchResultsOutput", { shoes : matchingShoes });
-                    });
-            });
-    }
-});
+document.querySelector('.cart-modal').addEventListener('click', eventHandler.checkout);
