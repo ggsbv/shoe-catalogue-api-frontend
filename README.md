@@ -107,3 +107,7 @@ The transpiler used for this application is a rollup plugin called "Buble", whic
 rollup -c > dist/main.dist.js
 ```
 3. Repeat steps 1 and 2!
+
+# Additional Notes
+
+__If you are interested in scouring the API that is used by this application, you can find it__ [here](https://github.com/ggsbv/testable-shoe-catalogue-api).
